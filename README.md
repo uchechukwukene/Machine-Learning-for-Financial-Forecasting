@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 ## **Usage**
 
-1. Download Financial Data
+### 1. Download Financial Data
 We use the yfinance library to download stock market data. You can specify the stock symbol, time range, and frequency. The example below fetches S&P 500 data:
 ```bash
 import yfinance as yf
