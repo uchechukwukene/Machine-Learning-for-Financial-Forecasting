@@ -42,15 +42,19 @@ cd FactorVAE-Finance
 pip install -r requirements.txt
 ```
 
-**STEP 2:** Change the directory to the repository.
-```bash
-  cd FolderName
-```
+## **Usage**
 
-**STEP 3:** Create a virtual environment
-(For Windows)
+1. Download Financial Data
+We use the yfinance library to download stock market data. You can specify the stock symbol, time range, and frequency. The example below fetches S&P 500 data:
 ```bash
-  python -m venv virtualenv
+import yfinance as yf
+
+# Download S&P 500 data
+data = yf.download('^GSPC', start='2010-01-01', end='2020-01-01')
+
+# Preprocess the data by normalizing it
+adj_close = data['Adj Close'].pct_change().dropna()  # Daily percentage change
+normalized_data = (adj_close - adj_close.mean()) / adj_close.std()  # Standardization
 ```
 
 
