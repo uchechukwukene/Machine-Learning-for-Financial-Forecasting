@@ -34,12 +34,24 @@ Factorized Variational Autoencoder (FactorVAE) is a variant of the VAE designed 
 ### 1. Clone the repository:
 ```bash
 git clone https://github.com/YourUsername/FactorVAE-Finance.git
-cd FactorVAE-Finance```
+cd FactorVAE-Finance
+```
 
 ### 2. Install the required dependencies:
 ```bash
-pip install -r requirements.txt```
+pip install -r requirements.txt
+```
 
+**STEP 2:** Change the directory to the repository.
+```bash
+  cd FolderName
+```
+
+**STEP 3:** Create a virtual environment
+(For Windows)
+```bash
+  python -m venv virtualenv
+```
 
 
 
